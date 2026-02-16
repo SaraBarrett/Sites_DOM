@@ -69,7 +69,6 @@ function changeLis() {
 function changeMode() {
   let myPage = document.querySelector("body");
 
-  
   if (myPage.classList.contains("day")) {
     //remover a class
     myPage.classList.remove("day");
@@ -83,19 +82,27 @@ function changeMode() {
   }
 }
 
-
 //criar elementos
-function loginButton(){
+function loginButton() {
   //criar elemento
-  let myP =document.createElement('p');
+  let myP = document.createElement("p");
 
   //dar texto ao elemento criado
-  myP.innerText = 'olá Pessoa logada!';
+  myP.innerText = "olá Pessoa logada!";
+
+  //indicar onde o novo elemento se vai posicionar (de quem é filho)
+  let myParent = document.getElementById("login-message");
+
+  myParent.appendChild(myP);
+}
 
 
- //indicar onde o novo elemento se vai posicionar (de quem é filho)
- let myParent = document.getElementById('login-message');
+//eliminar elementos 
+function removeImage(){
+  //seleccionar o elemento a eliminar
+  let myImage = document.getElementById('banner');
 
- myParent.appendChild(myP);
+  //remover elemento
+  myImage.remove();
 
 }

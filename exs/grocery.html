@@ -1,11 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou às Compras</title>
+    <script src="../js/events.js" defer></script>
   </head>
   <body>
+    <button id="btn-events">Olá mundo dos eventos</button>
+    <button id="btn-events2">Olá mundo dos eventos teste 2</button>
+    <button id="login-btn">Login</button>
+
+    <h3>Animais do Zoo</h3>
+    <form id="zoo-animals" action="/server">
+      <input placeholder="animal" name="animal" type="text" /> <br />
+      <button type="submit">Submeter</button>
+    </form>
+    <ul id="animals-list">
+
+    </ul>
+
+    <hr/>
+
     <form id="myShoppingList" action="/backend">
       <input
         id="product"
@@ -23,7 +39,6 @@
       /><br />
       <button type="submit">Submeter</button>
     </form>
-
-    <ul></ul>
+    <ul id="shopping-items"></ul>
   </body>
 </html>
