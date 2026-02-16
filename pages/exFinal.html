@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio Multimédia Dinâmico</title>
+    <link rel="stylesheet" href="../css/exFinal.css" />
+  </head>
+
+  <body>
+    <div id="portfolio">
+      <h1 id="titulo">Meu Portfólio</h1>
+      <p id="descricao">Sou estudante de multimédia...</p>
+      <img
+        id="fotoPrincipal"
+        src="https://noticias.utad.pt/wp-content/uploads/2016/11/media-2cwljom.jpg"
+      />
+
+      <ul id="listaHobbies">
+        <li>Fotografia</li>
+        <li>Design</li>
+        <li>Vídeo</li>
+      </ul>
+
+      <button id="btnTema">Mudar Tema</button><br />
+      <button id="btnImagem">Trocar Imagem</button><br />
+      <button id="btnAdicionarHobby">Adicionar Hobby</button><br />
+    </div>
+
+    <h2>Personalizar Portfólio</h2>
+
+    <form id="formPerfil">
+      Nome: <input type="text" id="nome" required /><br /><br />
+      Frase de apresentação:<br />
+      <textarea id="frase" required></textarea><br /><br />
+      Cor favorita: <input type="color" id="cor" /><br /><br />
+      Foto (URL): <input type="url" id="novaFoto" /><br /><br />
+      <button type="submit">Atualizar Portfólio</button>
+    </form>
+  </body>
+</html>

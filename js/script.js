@@ -29,8 +29,10 @@ function translateLang() {
   //manipular o texto: propriedade innerText ou textContent
   if (myH1.innerText == "Galinhas Sedosas") {
     myH1.innerText = "Silkie Chickens";
+    myH1.style.backgroundColor = "white";
   } else {
     myH1.innerText = "Galinhas Sedosas";
+    myH1.style.backgroundColor = "green";
   }
 }
 
@@ -51,4 +53,49 @@ function changeImage() {
     myImage.src =
       "https://images.unsplash.com/photo-1563281577-a7be47e20db9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80";
   }
+}
+
+function changeLis() {
+  //seleccionar
+  let myLis = document.querySelectorAll(".toclevel-1");
+
+  //manipular
+  for (let element of myLis) {
+    element.style.backgroundColor = "violet";
+  }
+}
+
+//modo nocturno /dia usando o classlist
+function changeMode() {
+  let myPage = document.querySelector("body");
+
+  
+  if (myPage.classList.contains("day")) {
+    //remover a class
+    myPage.classList.remove("day");
+    //adicionar a class
+    myPage.classList.add("night");
+  } else {
+    //remover a class
+    myPage.classList.remove("night");
+    //adicionar a class
+    myPage.classList.add("day");
+  }
+}
+
+
+//criar elementos
+function loginButton(){
+  //criar elemento
+  let myP =document.createElement('p');
+
+  //dar texto ao elemento criado
+  myP.innerText = 'olá Pessoa logada!';
+
+
+ //indicar onde o novo elemento se vai posicionar (de quem é filho)
+ let myParent = document.getElementById('login-message');
+
+ myParent.appendChild(myP);
+
 }

@@ -2,6 +2,8 @@
     <title>100 Buttons!</title>
 
     <link rel="stylesheet" href="../css/app.css">
+<script src="../js/exs.js"></script>
+
 </head>
 
 <body>
@@ -10,7 +12,21 @@
         
         <button onclick="createBtns()">Create 100Btns</button>
 
-    
+        <h3>Calculadora</h3>
+        <input id="num1" type="number" placeholder="Insira um número">
+        <select name="" id="operation">
+            <option value="">Escolha uma operação</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input id="num2" type="number" placeholder="Insira outro número">
+        <button onclick="calc()">=</button>
+        <br>
+        <p>Total: <span id="total">0</span></p>
+
+
     </div>
 
     <button id="btnTest">Test</button>
